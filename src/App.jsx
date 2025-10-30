@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -40,6 +41,7 @@ const App = () => {
           <Projects />
           <Contact />
         </main>
+        <Footer />
 
         {showScrollTop && (
           <button

@@ -1,5 +1,5 @@
 import React from "react";
-import { Book, School, GraduationCap } from "lucide-react"; // Icons for primary, secondary, tertiary
+import { Book, School, GraduationCap } from "lucide-react";
 
 const education = [
   {
@@ -41,10 +41,14 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-20 px-6 bg-white dark:bg-gray-900 transition-colors"
+      className="relative py-20 px-6 bg-gradient-to-br from-green-50 via-white to-green-100 
+                 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors overflow-hidden"
     >
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_1px_1px,#4ade80_1px,transparent_0)] bg-[length:20px_20px]" />
+
       {/* About Me */}
-      <div className="max-w-3xl mx-auto text-center mb-16">
+      <div className="relative max-w-4xl mx-auto text-center mb-20 backdrop-blur-md bg-white/10 dark:bg-gray-800/20 p-10 rounded-2xl shadow-lg">
         <h2 className="text-3xl font-semibold text-green-700 dark:text-green-400 mb-6">
           About Me
         </h2>
@@ -63,31 +67,33 @@ const About = () => {
       </div>
 
       {/* Education */}
-      <div className="max-w-5xl mx-auto">
-        <h3 className="text-2xl font-semibold text-green-700 dark:text-green-400 mb-8 text-center">
+      <div className="relative max-w-6xl mx-auto">
+        <h3 className="text-2xl font-semibold text-green-700 dark:text-green-400 mb-10 text-center">
           Education
         </h3>
-        <div className="grid md:grid-cols-3 gap-8">
+
+        <div className="grid md:grid-cols-3 gap-10 relative z-10">
           {education.map((edu, i) => (
             <div
               key={i}
-              className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-md transition hover:scale-105 text-center"
+              className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-md transition-transform transform hover:-translate-y-2 hover:shadow-xl 
+                         hover:bg-green-50/60 dark:hover:bg-gray-700/40 text-center duration-300"
             >
-              {/* Icon */}
-              {edu.icon}
-
-              <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-1">
-                {edu.level}
-              </h4>
-              <p className="text-green-700 dark:text-green-400 font-medium mb-1">
-                {edu.school}
-              </p>
-              <p className="text-gray-600 dark:text-gray-400 italic mb-2">
-                {edu.year}
-              </p>
-              <p className="text-gray-600 dark:text-gray-400">
-                {edu.description}
-              </p>
+              <div className="flex flex-col items-center">
+                {edu.icon}
+                <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-1">
+                  {edu.level}
+                </h4>
+                <p className="text-green-700 dark:text-green-400 font-medium mb-1">
+                  {edu.school}
+                </p>
+                <p className="text-gray-600 dark:text-gray-400 italic mb-2">
+                  {edu.year}
+                </p>
+                <p className="text-gray-600 dark:text-gray-400">
+                  {edu.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Menu,
   X,
@@ -7,6 +7,7 @@ import {
   Wrench,
   Folder,
   Mail,
+  Award,
   Moon,
   Sun,
 } from "lucide-react";
@@ -19,6 +20,11 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     { name: "Home", icon: <Home size={18} />, href: "#home" },
     { name: "About", icon: <User size={18} />, href: "#about" },
     { name: "Services", icon: <Wrench size={18} />, href: "#services" },
+    {
+      name: "Certifications",
+      icon: <Award size={18} />,
+      href: "#certifications",
+    },
     { name: "Projects", icon: <Folder size={18} />, href: "#projects" },
     { name: "Contact", icon: <Mail size={18} />, href: "#contact" },
   ];
@@ -30,6 +36,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           Ugay
         </h1>
 
+        {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
             <a
@@ -50,6 +57,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           </button>
         </div>
 
+        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-gray-700 dark:text-gray-200"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -58,6 +66,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         </button>
       </div>
 
+      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden flex flex-col items-center bg-white dark:bg-gray-900 pb-4 space-y-3">
           {navLinks.map((link) => (

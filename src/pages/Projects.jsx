@@ -4,20 +4,20 @@ const projects = [
   {
     title: "Land Registry System (Blockchain)",
     desc: "A decentralized platform that securely stores and verifies land ownership records using smart contracts, reducing fraud and improving transparency.",
-    tech: ["Solidity", "Ethereum", "React", "Node.js", "IPFS", "Metamask"],
-    link: "#",
+    tech: ["Go", "Hyperledger", "React", "Node.js", "IPFS"],
+    link: "#https://github.com/ugyentring/tera-dapp",
   },
   {
     title: "Blockchain Voting System",
     desc: "An immutable voting platform that uses blockchain to record votes securely and transparently, preventing tampering or duplicate voting.",
     tech: ["Solidity", "Hardhat", "React", "Express", "Web3.js"],
-    link: "#",
+    link: "https://github.com/ugyentring/votingdapp",
   },
   {
     title: "Social Media DApp",
     desc: "A decentralized social media app where users can post, like, and connect using blockchain-based authentication integrated with Metamask.",
     tech: ["Next.js", "TailwindCSS", "Solidity", "Metamask", "MongoDB"],
-    link: "#",
+    link: "https://github.com/ugyentring/prj-app",
   },
 ];
 

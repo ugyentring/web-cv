@@ -33,7 +33,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     <nav className="fixed w-full z-50 bg-white dark:bg-gray-900 shadow-md dark:shadow-none transition-colors">
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center py-3">
         <h1 className="text-xl font-bold text-green-700 dark:text-green-400">
-          Ugay
+          Ugayy
         </h1>
 
         {/* Desktop Menu */}

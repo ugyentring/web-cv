@@ -13,7 +13,7 @@ const Home = () => {
         {/* Left: Name, Role, Description, Buttons */}
         <div className="text-center md:text-left space-y-6">
           <h1 className="text-5xl md:text-6xl font-bold text-green-700 dark:text-green-400">
-            Ugay
+            Ugayy
           </h1>
           <p className="text-2xl text-gray-700 dark:text-gray-300 font-semibold">
             Software Developer & Cybersecurity Analyst

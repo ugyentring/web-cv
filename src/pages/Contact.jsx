@@ -31,7 +31,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const subject = encodeURIComponent(
-      `Portfolio enquiry${form.name ? ` from ${form.name}` : ""}`
+      `Hello${form.name ? ` from ${form.name}` : ""}`
     );
     const body = encodeURIComponent(
       `${form.message}\n\n— ${form.name}${
@@ -60,14 +60,14 @@ const Contact = () => {
           <div className="lg:col-span-5 space-y-10">
             <div>
               <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.1] text-balance">
-                Let&apos;s build
+                Let&apos;s work
                 <span className="block text-neutral-400 dark:text-neutral-600 font-light">
-                  something thoughtful.
+                  on something together.
                 </span>
               </h2>
               <p className="mt-5 text-base sm:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty max-w-md">
-                Open to freelance work, security assessments, and meaningful
-                collaborations. Reach out — I read every message.
+                Open to freelance work, internships, and team projects.
+                Send me a message and I&apos;ll get back to you soon.
               </p>
             </div>
 
@@ -142,7 +142,7 @@ const Contact = () => {
             {/* Socials */}
             <div>
               <p className="text-xs uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-400 font-medium mb-3">
-                Elsewhere
+                Find me on
               </p>
               <div className="flex items-center gap-2">
                 {[
@@ -185,7 +185,7 @@ const Contact = () => {
             >
               <div className="flex items-center justify-between mb-6">
                 <span className="text-xs uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-400 font-medium">
-                  Send a message
+                  Drop me a message
                 </span>
                 <span className="text-xs font-mono uppercase tracking-widest text-neutral-300 dark:text-neutral-700">
                   01 / 01
@@ -221,21 +221,21 @@ const Contact = () => {
                   required
                   value={form.message}
                   onChange={(v) => setForm((f) => ({ ...f, message: v }))}
-                  placeholder="Tell me about your project, idea, or question…"
+                  placeholder="Tell me a bit about your project or what you have in mind…"
                 />
               </div>
 
               <div className="mt-7 flex flex-wrap items-center justify-between gap-3">
                 <p className="text-xs text-neutral-500 dark:text-neutral-400">
-                  Submitting opens your email client with the message
-                  pre-filled.
+                  This will open your email app with the message ready to
+                  send.
                 </p>
                 <div className="flex items-center gap-3">
                   <a
                     href={`mailto:${EMAIL}`}
                     className="group inline-flex items-center gap-2 rounded-full border border-neutral-300 dark:border-neutral-700 px-5 py-2.5 text-sm font-medium text-neutral-900 dark:text-neutral-100 transition-all hover:border-neutral-900 dark:hover:border-neutral-100 hover:gap-3"
                   >
-                    Direct email
+                    Email me directly
                     <ArrowUpRight
                       size={14}
                       strokeWidth={1.75}
@@ -247,7 +247,7 @@ const Contact = () => {
                     className="group inline-flex items-center gap-2 rounded-full bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 px-5 py-2.5 text-sm font-medium transition-all hover:bg-neutral-800 dark:hover:bg-white hover:gap-3"
                   >
                     <Send size={14} strokeWidth={1.75} />
-                    Send message
+                    Send
                   </button>
                 </div>
               </div>

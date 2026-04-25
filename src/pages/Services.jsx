@@ -1,27 +1,27 @@
 import React from "react";
-import { Code2, Server, ShieldCheck, ArrowUpRight } from "lucide-react";
+import { Code2, Server, Network, ArrowUpRight } from "lucide-react";
 
 const services = [
   {
     title: "Frontend Development",
     Icon: Code2,
     description:
-      "Responsive, accessible interfaces with a focus on performance, motion, and refined typographic detail.",
+      "Building websites that look good, work on every screen, and feel smooth to use.",
     tech: ["React", "Next.js", "TailwindCSS", "TypeScript", "JavaScript"],
   },
   {
     title: "Backend Development",
     Icon: Server,
     description:
-      "Robust APIs and server-side systems engineered for clarity, scalability, and long-term maintainability.",
+      "Setting up APIs, databases, and the server side of things so the whole app runs reliably.",
     tech: ["Node.js", "Express", "MongoDB", "MySQL", "Python"],
   },
   {
-    title: "Penetration Testing",
-    Icon: ShieldCheck,
+    title: "Networking",
+    Icon: Network,
     description:
-      "Offensive security assessments to surface vulnerabilities and harden web applications against real-world threats.",
-    tech: ["Kali Linux", "Burp Suite", "OWASP", "Metasploit"],
+      "Setting up and configuring small networks — IP addressing, routing, switching, and basic troubleshooting.",
+    tech: ["Cisco IOS", "TCP/IP", "Routing", "Switching", "Subnetting"],
   },
 ];
 
@@ -45,15 +45,15 @@ const Services = () => {
             <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.1] text-balance">
               What I do
               <span className="block text-neutral-400 dark:text-neutral-600 font-light">
-                Engineering across the stack.
+                The kind of work I take on.
               </span>
             </h2>
           </div>
           <div className="lg:col-span-6 lg:pt-3">
             <p className="max-w-xl text-base sm:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty">
-              A focused set of services covering the surface, the core, and the
-              security layer of modern web applications. Designed to be elegant
-              on the outside and resilient underneath.
+              These are the main things I work on right now. From the user
+              interface to the server, all the way down to the network — I
+              like understanding how the whole thing fits together.
             </p>
           </div>
         </div>

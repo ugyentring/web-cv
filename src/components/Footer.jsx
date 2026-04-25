@@ -63,8 +63,8 @@ const Footer = () => {
               </span>
             </a>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty">
-              Building secure, considered web experiences from Thimphu, Bhutan.
-              Available for full-stack engineering and security work.
+              Building web apps and learning networks from Thimphu, Bhutan.
+              Open to full-stack work and internships.
             </p>
 
             {/* CTA */}
@@ -87,7 +87,7 @@ const Footer = () => {
           {/* Sitemap */}
           <div className="lg:col-span-4">
             <p className="text-xs uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-400 font-medium mb-5">
-              Sitemap
+              Pages
             </p>
             <ul className="grid grid-cols-2 gap-y-3 gap-x-6">
               {navLinks.map((link) => (
@@ -111,7 +111,7 @@ const Footer = () => {
           {/* Socials */}
           <div className="lg:col-span-3">
             <p className="text-xs uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-400 font-medium mb-5">
-              Elsewhere
+              Find me on
             </p>
             <ul className="space-y-3">
               {socials.map(({ label, href, Icon }) => (
@@ -139,7 +139,7 @@ const Footer = () => {
         {/* Bottom row */}
         <div className="pt-8 flex flex-col-reverse sm:flex-row items-start sm:items-center justify-between gap-4">
           <p className="text-xs text-neutral-500 dark:text-neutral-400">
-            © {year} Ugyen Tshering. Crafted with care in Thimphu, Bhutan.
+            © {year} Ugyen Tshering. Made in Thimphu, Bhutan.
           </p>
           <div className="flex items-center gap-3">
             <span className="text-[10px] font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-600">

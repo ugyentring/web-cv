@@ -6,7 +6,7 @@ const certifications = [
     title: "Foundations of User Experience (UX) Design",
     provider: "Google",
     year: "2023",
-    desc: "User-centered design principles, the design process, accessibility, and equity-focused design foundations.",
+    desc: "Learned the basics of UX — how to design with the user in mind, and why accessibility matters.",
     file: "/certificates/ux.pdf",
     verify: "https://coursera.org/share/1ead753320d825f511532e6129b004e8",
   },
@@ -14,7 +14,7 @@ const certifications = [
     title: "Foundations of Cybersecurity",
     provider: "Google",
     year: "2023",
-    desc: "Core skills and knowledge required to step into the role of a cybersecurity analyst.",
+    desc: "An intro to cybersecurity — what a security analyst does, common threats, and how teams stay safe online.",
     file: "/certificates/cyber.pdf",
     verify:
       "https://www.coursera.org/account/accomplishments/verify/QSDBFFVABUN8",
@@ -23,7 +23,7 @@ const certifications = [
     title: "Play It Safe: Manage Security Risks",
     provider: "Google",
     year: "2023",
-    desc: "Identifying primary threats, risks, and vulnerabilities to business operations and assets.",
+    desc: "Covered how to spot risks and weaknesses in a business, and how to plan for them before they happen.",
     file: "/certificates/security.pdf",
     verify: "https://coursera.org/share/baf167899414752f0a223ea36e0f17b2",
   },
@@ -31,7 +31,7 @@ const certifications = [
     title: "CCNA: Introduction to Networks",
     provider: "Cisco Networking Academy",
     year: "2025",
-    desc: "Core networking concepts — IP addressing, routing, switching, and structured network troubleshooting.",
+    desc: "The basics of networking — IP addresses, routing, switching, and how to troubleshoot a small network.",
     file: null,
     verify: "https://www.netacad.com/",
   },
@@ -57,14 +57,14 @@ const Certifications = () => {
             <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.1] text-balance">
               Certifications
               <span className="block text-neutral-400 dark:text-neutral-600 font-light">
-                Verified, continuously learning.
+                Things I&apos;ve learned along the way.
               </span>
             </h2>
           </div>
           <div className="lg:col-span-6 lg:pt-3">
             <p className="max-w-xl text-base sm:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty">
-              A record of completed coursework across cybersecurity, networking,
-              and user experience design — each independently verifiable.
+              Courses I&apos;ve completed in cybersecurity, networking, and UX
+              design. You can open each certificate or check it online.
             </p>
           </div>
         </div>
@@ -118,12 +118,12 @@ const Certifications = () => {
                     className="group/btn inline-flex items-center gap-2 rounded-full bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 px-4 py-2 text-xs font-medium transition-all hover:bg-neutral-800 dark:hover:bg-white hover:gap-3"
                   >
                     <FileText size={14} strokeWidth={1.75} />
-                    View Certificate
+                    See certificate
                   </a>
                 ) : (
                   <span className="inline-flex items-center gap-2 text-xs font-medium text-neutral-400 dark:text-neutral-600">
                     <FileText size={14} strokeWidth={1.75} />
-                    File coming soon
+                    Coming soon
                   </span>
                 )}
                 <a
@@ -133,7 +133,7 @@ const Certifications = () => {
                   className="group/verify inline-flex items-center gap-1.5 text-xs font-medium text-neutral-600 dark:text-neutral-400 transition-colors hover:text-neutral-900 dark:hover:text-neutral-100"
                 >
                   <BadgeCheck size={14} strokeWidth={1.75} />
-                  Verify online
+                  Check online
                   <ArrowUpRight
                     size={12}
                     strokeWidth={1.75}

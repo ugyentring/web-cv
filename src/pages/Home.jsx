@@ -10,7 +10,7 @@ import {
   MapPin,
   Sparkles,
   Code2,
-  ShieldCheck,
+  Network,
 } from "lucide-react";
 
 const Home = () => {
@@ -74,10 +74,9 @@ const Home = () => {
 
           {/* Description */}
           <p className="max-w-xl text-base sm:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty">
-            I craft secure, modern web applications with a focus on clean
-            architecture and thoughtful detail. Bridging full-stack development
-            and cybersecurity to build products that are both elegant and
-            resilient.
+            I build modern web apps with clean code and a focus on good user
+            experience. I also work with computer networks and enjoy figuring
+            out how systems connect.
           </p>
 
           {/* Meta row */}
@@ -89,12 +88,12 @@ const Home = () => {
             <span className="hidden sm:inline-block h-1 w-1 rounded-full bg-neutral-300 dark:bg-neutral-700" />
             <span className="inline-flex items-center gap-2">
               <Code2 size={16} strokeWidth={1.75} />
-              Full-Stack Engineering
+              Full-Stack Developer
             </span>
             <span className="hidden sm:inline-block h-1 w-1 rounded-full bg-neutral-300 dark:bg-neutral-700" />
             <span className="inline-flex items-center gap-2">
-              <ShieldCheck size={16} strokeWidth={1.75} />
-              Cybersecurity
+              <Network size={16} strokeWidth={1.75} />
+              Networking
             </span>
           </div>
 
@@ -188,10 +187,10 @@ const Home = () => {
                   />
                   <div className="leading-tight">
                     <p className="text-xs text-neutral-500 dark:text-neutral-400">
-                      Currently building
+                      Currently working on
                     </p>
                     <p className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                      Secure web platforms
+                      Web apps and networks
                     </p>
                   </div>
                 </div>
@@ -207,10 +206,10 @@ const Home = () => {
       {/* Bottom stats strip */}
       <div className="absolute bottom-0 left-0 right-0 hidden md:block border-t border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/60 backdrop-blur">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-4 divide-x divide-neutral-200 dark:divide-neutral-800">
-          <Stat value="3+" label="Years coding" />
-          <Stat value="15+" label="Projects shipped" />
-          <Stat value="10+" label="Technologies" />
-          <Stat value="∞" label="Curiosity" />
+          <Stat value="3+" label="Years of coding" />
+          <Stat value="15+" label="Projects built" />
+          <Stat value="10+" label="Tools I use" />
+          <Stat value="∞" label="Things to learn" />
         </div>
       </div>
     </section>

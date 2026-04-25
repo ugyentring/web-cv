@@ -4,24 +4,24 @@ import { ArrowUpRight, Github, FolderGit2 } from "lucide-react";
 const projects = [
   {
     title: "Land Registry System",
-    tagline: "Blockchain · Decentralized records",
-    desc: "A decentralized platform that securely stores and verifies land ownership records using smart contracts — reducing fraud and improving transparency across registries.",
+    tagline: "Blockchain · Land records",
+    desc: "A blockchain-based system for storing land ownership records. The goal is to make records harder to fake and easier to verify.",
     tech: ["Go", "Hyperledger", "React", "Node.js", "IPFS"],
     link: "https://github.com/ugyentring/tera-dapp",
     year: "2025",
   },
   {
     title: "Blockchain Voting System",
-    tagline: "Smart contracts · Tamper-proof voting",
-    desc: "An immutable voting platform that records ballots on-chain — preventing tampering, double-voting, and providing verifiable, transparent election results.",
+    tagline: "Smart contracts · Online voting",
+    desc: "An online voting app where every vote is saved on a blockchain. Once a vote is cast, it can't be changed, and the results are easy to verify.",
     tech: ["Solidity", "Hardhat", "React", "Express", "Web3.js"],
     link: "https://github.com/ugyentring/votingdapp",
     year: "2024",
   },
   {
     title: "Social Media DApp",
-    tagline: "Web3 · Decentralized identity",
-    desc: "A decentralized social network where users post, like, and connect using blockchain-based authentication integrated with Metamask wallets.",
+    tagline: "Web3 · Wallet login",
+    desc: "A small social media app where users sign in with their Metamask wallet, then post and like content. A simple way to explore Web3 apps.",
     tech: ["Next.js", "TailwindCSS", "Solidity", "Metamask", "MongoDB"],
     link: "https://github.com/ugyentring/prj-app",
     year: "2024",
@@ -39,7 +39,7 @@ const Projects = () => {
         <div className="flex items-center gap-4 mb-10">
           <span className="h-px w-10 bg-neutral-300 dark:bg-neutral-700" />
           <span className="text-xs uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-400 font-medium">
-            Selected Work
+            My Work
           </span>
         </div>
 
@@ -48,14 +48,15 @@ const Projects = () => {
             <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.1] text-balance">
               Projects
               <span className="block text-neutral-400 dark:text-neutral-600 font-light">
-                Built with intent. Shipped with care.
+                A few things I&apos;ve built.
               </span>
             </h2>
           </div>
           <div className="lg:col-span-5 lg:pt-3">
             <p className="text-base sm:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty">
-              A small selection of work spanning decentralized systems,
-              full-stack platforms, and security-aware applications.
+              Here are some of the projects I&apos;ve been working on lately.
+              They cover blockchain, web apps, and a bit of everything in
+              between.
             </p>
           </div>
         </div>
@@ -138,7 +139,7 @@ const Projects = () => {
             className="group inline-flex items-center gap-2 rounded-full border border-neutral-300 dark:border-neutral-700 px-5 py-2.5 text-sm font-medium text-neutral-900 dark:text-neutral-100 transition-all hover:border-neutral-900 dark:hover:border-neutral-100 hover:gap-3"
           >
             <Github size={16} strokeWidth={1.75} />
-            Explore all repositories
+            See all my work on GitHub
             <ArrowUpRight
               size={16}
               strokeWidth={1.75}

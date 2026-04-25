@@ -5,33 +5,33 @@ import {
   BookOpen,
   Sparkles,
   Code2,
-  ShieldCheck,
-  Layers,
+  Network,
+  PenTool,
 } from "lucide-react";
 
 const education = [
   {
-    level: "Tertiary Education",
+    level: "College",
     school: "Gyalpozhing College of Information Technology",
     year: "2022 — 2026",
     description:
-      "Specialized in Computer Science and Cybersecurity. Built projects across web development, blockchain, and penetration testing.",
+      "Studied Computer Science. Worked on projects in web development, blockchain, and computer networking.",
     Icon: GraduationCap,
   },
   {
-    level: "Secondary Education",
+    level: "High School",
     school: "Kamji Central School",
     year: "2016 — 2019",
     description:
-      "Focused on Science and Mathematics, developing analytical and problem-solving skills.",
+      "Studied Science and Mathematics. This is where I started to enjoy solving problems with logic.",
     Icon: School,
   },
   {
-    level: "Primary Education",
+    level: "Primary School",
     school: "Kezari Primary School",
     year: "2009 — 2015",
     description:
-      "Built a strong foundation in essential subjects and learning habits.",
+      "Where it all started — learning the basics and building good study habits.",
     Icon: BookOpen,
   },
 ];
@@ -39,18 +39,18 @@ const education = [
 const principles = [
   {
     Icon: Code2,
-    title: "Engineering",
-    desc: "Clean architecture, readable code, and pragmatic full-stack solutions.",
+    title: "Web Development",
+    desc: "Building full-stack web apps that are simple to use and easy to maintain.",
   },
   {
-    Icon: ShieldCheck,
-    title: "Security",
-    desc: "Threat-aware development with a focus on penetration testing.",
+    Icon: Network,
+    title: "Networking",
+    desc: "Learning how computers and networks talk to each other, and how to set them up.",
   },
   {
-    Icon: Layers,
-    title: "Craft",
-    desc: "Considered details, refined typography, and minimal interfaces.",
+    Icon: PenTool,
+    title: "Design",
+    desc: "Caring about the small details — clear layouts, good typography, and a clean look.",
   },
 ];
 
@@ -73,9 +73,9 @@ const About = () => {
           {/* Heading */}
           <div className="lg:col-span-5">
             <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.1] text-balance">
-              A developer who values
+              A little bit
               <span className="block text-neutral-400 dark:text-neutral-600 font-light">
-                clarity, security, and craft.
+                about me.
               </span>
             </h2>
           </div>
@@ -84,15 +84,14 @@ const About = () => {
           <div className="lg:col-span-7 space-y-5 text-neutral-600 dark:text-neutral-400 text-base sm:text-lg leading-relaxed text-pretty">
             <p>
               I&apos;m a Computer Science graduate from Gyalpozhing College of
-              Information Technology, focused on building secure and efficient
-              web solutions. My work spans frontend and backend engineering,
-              blockchain applications, and offensive security.
+              Information Technology. I enjoy building web apps that are
+              fast, easy to use, and well organized behind the scenes.
             </p>
             <p>
-              Across academic and personal projects, I&apos;ve combined modern
-              technologies with security-first thinking — gaining hands-on
-              experience in full-stack development, decentralized applications,
-              and penetration testing.
+              Through school and personal projects, I&apos;ve worked on
+              full-stack web development, blockchain apps, and computer
+              networking. I like learning how things work and putting that
+              knowledge into projects I can be proud of.
             </p>
 
             {/* Principles */}
@@ -129,11 +128,10 @@ const About = () => {
               </span>
             </div>
             <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight leading-tight text-balance">
-              A foundation built over fifteen years.
+              Where I&apos;ve studied so far.
             </h3>
             <p className="mt-3 text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
-              From early curiosity to a focused study of computer science and
-              cybersecurity.
+              From primary school in Bhutan to a degree in Computer Science.
             </p>
           </div>
 

@@ -1,84 +1,230 @@
 import React from "react";
 import myPic from "../assets/mypic.jpg";
 import resume from "../assets/My_Resume.pdf";
-import { Download, Mail, Github, Linkedin } from "lucide-react";
+import {
+  ArrowDownToLine,
+  ArrowUpRight,
+  Github,
+  Linkedin,
+  Mail,
+  MapPin,
+  Sparkles,
+  Code2,
+  Network,
+} from "lucide-react";
 
 const Home = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center px-6 bg-gradient-to-br from-green-50 to-white dark:from-gray-900 dark:to-gray-800 transition-colors overflow-hidden"
+      className="relative min-h-screen flex items-center px-6 pt-28 pb-16 bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 transition-colors overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
-        {/* Left: Name, Role, Description, Buttons */}
-        <div className="text-center md:text-left space-y-6">
-          <h1 className="text-5xl md:text-6xl font-bold text-green-700 dark:text-green-400">
-            Ugayy
-          </h1>
-          <p className="text-2xl text-gray-700 dark:text-gray-300 font-semibold">
-            Software Developer & Cybersecurity Analyst
-          </p>
-          <p className="text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg">
-            I build secure, modern, and high-performance web applications. I
-            specialize in frontend & backend development and penetration
-            testing.
+      {/* Subtle grid background */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-[0.35] dark:opacity-[0.15]"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.06) 1px, transparent 1px)",
+          backgroundSize: "56px 56px",
+          maskImage:
+            "radial-gradient(ellipse at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 75%)",
+          WebkitMaskImage:
+            "radial-gradient(ellipse at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 75%)",
+        }}
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 hidden dark:block opacity-[0.08]"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.4) 1px, transparent 1px)",
+          backgroundSize: "56px 56px",
+          maskImage:
+            "radial-gradient(ellipse at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 75%)",
+          WebkitMaskImage:
+            "radial-gradient(ellipse at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 75%)",
+        }}
+      />
+
+      <div className="relative max-w-6xl mx-auto w-full grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        {/* Left: Content */}
+        <div className="lg:col-span-7 space-y-8">
+          {/* Status pill */}
+          <div className="inline-flex items-center gap-2 rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 px-3 py-1.5 text-xs font-medium text-neutral-600 dark:text-neutral-400">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-neutral-900 dark:bg-neutral-100 opacity-60"></span>
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-neutral-900 dark:bg-neutral-100"></span>
+            </span>
+            Available for new opportunities
+          </div>
+
+          {/* Heading */}
+          <div className="space-y-4">
+            <p className="text-sm uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400 font-medium">
+              Hello, I&apos;m
+            </p>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.05] text-balance">
+              Ugyen Tshering
+              <span className="block text-neutral-400 dark:text-neutral-600 font-light">
+                Software Developer
+              </span>
+            </h1>
+          </div>
+
+          {/* Description */}
+          <p className="max-w-xl text-base sm:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty">
+            I build modern web apps with clean code and a focus on good user
+            experience. I also work with computer networks and enjoy figuring
+            out how systems connect.
           </p>
 
-          {/* Buttons */}
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4 mt-4 justify-center md:justify-start">
-            {/* Download CV */}
+          {/* Meta row */}
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-neutral-500 dark:text-neutral-400">
+            <span className="inline-flex items-center gap-2">
+              <MapPin size={16} strokeWidth={1.75} />
+              Thimphu, Bhutan
+            </span>
+            <span className="hidden sm:inline-block h-1 w-1 rounded-full bg-neutral-300 dark:bg-neutral-700" />
+            <span className="inline-flex items-center gap-2">
+              <Code2 size={16} strokeWidth={1.75} />
+              Full-Stack Developer
+            </span>
+            <span className="hidden sm:inline-block h-1 w-1 rounded-full bg-neutral-300 dark:bg-neutral-700" />
+            <span className="inline-flex items-center gap-2">
+              <Network size={16} strokeWidth={1.75} />
+              Networking
+            </span>
+          </div>
+
+          {/* CTAs */}
+          <div className="flex flex-wrap items-center gap-3 pt-2">
             <a
               href={resume}
               download
-              className="bg-green-700 hover:bg-green-800 text-white px-5 py-3 rounded-lg flex items-center gap-2 transition transform hover:scale-105"
+              className="group inline-flex items-center gap-2 rounded-full bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 px-6 py-3 text-sm font-medium transition-all hover:bg-neutral-800 dark:hover:bg-white hover:gap-3"
             >
-              <Download size={18} />
-              <span>Download CV</span>
+              <ArrowDownToLine
+                size={16}
+                strokeWidth={2}
+                className="transition-transform group-hover:translate-y-0.5"
+              />
+              Download Resume
             </a>
+            <a
+              href="#contact"
+              className="group inline-flex items-center gap-2 rounded-full border border-neutral-300 dark:border-neutral-700 bg-transparent px-6 py-3 text-sm font-medium text-neutral-900 dark:text-neutral-100 transition-all hover:border-neutral-900 dark:hover:border-neutral-100 hover:gap-3"
+            >
+              Get in touch
+              <ArrowUpRight
+                size={16}
+                strokeWidth={2}
+                className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              />
+            </a>
+          </div>
 
-            {/* Social Links */}
-            <div className="flex gap-3 justify-center md:justify-start mt-2 sm:mt-0">
-              <a
-                href="mailto:tsheringugyen483@gmail.com"
-                className="text-gray-700 dark:text-gray-300 hover:text-green-700 dark:hover:text-green-400 transition"
-              >
-                <Mail size={24} />
-              </a>
-              <a
-                href="https://github.com/ugyentring?tab=repositories"
-                target="_blank"
-                rel="noreferrer"
-                className="text-gray-700 dark:text-gray-300 hover:text-green-700 dark:hover:text-green-400 transition"
-              >
-                <Github size={24} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/ugyen-tshering-939521328/"
-                target="_blank"
-                rel="noreferrer"
-                className="text-gray-700 dark:text-gray-300 hover:text-green-700 dark:hover:text-green-400 transition"
-              >
-                <Linkedin size={24} />
-              </a>
-            </div>
+          {/* Social row */}
+          <div className="flex items-center gap-1 pt-2">
+            <span className="text-xs uppercase tracking-[0.2em] text-neutral-400 dark:text-neutral-600 mr-3">
+              Connect
+            </span>
+            <a
+              href="https://github.com/ugyentring?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+              className="p-2 rounded-full text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors"
+            >
+              <Github size={18} strokeWidth={1.75} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ugyen-tshering-939521328/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+              className="p-2 rounded-full text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors"
+            >
+              <Linkedin size={18} strokeWidth={1.75} />
+            </a>
+            <a
+              href="mailto:tsheringugyen483@gmail.com"
+              aria-label="Email"
+              className="p-2 rounded-full text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors"
+            >
+              <Mail size={18} strokeWidth={1.75} />
+            </a>
           </div>
         </div>
 
-        {/* Right: Avatar */}
-        <div className="flex justify-center md:justify-end">
-          <div className="relative">
-            <img
-              src={myPic}
-              alt="avatar"
-              className="w-64 h-80 md:w-72 md:h-96 rounded-2xl object-cover shadow-2xl transition-transform transform hover:scale-105"
+        {/* Right: Portrait card */}
+        <div className="lg:col-span-5 flex justify-center lg:justify-end">
+          <div className="relative w-full max-w-sm">
+            {/* Decorative offset frame */}
+            <div
+              aria-hidden="true"
+              className="absolute -inset-3 border border-neutral-200 dark:border-neutral-800 rounded-2xl"
             />
-            {/* Optional subtle faded border effect */}
-            <div className="absolute inset-0 rounded-2xl border-4 border-green-200 dark:border-green-700 opacity-20 pointer-events-none"></div>
+            <div
+              aria-hidden="true"
+              className="absolute -bottom-4 -right-4 w-20 h-20 border border-neutral-300 dark:border-neutral-700 rounded-full"
+            />
+
+            <div className="relative rounded-2xl overflow-hidden bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-sm">
+              <img
+                src={myPic || "/placeholder.svg"}
+                alt="Portrait of Ugyen Tshering"
+                className="w-full h-[420px] sm:h-[480px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              />
+
+              {/* Bottom info card */}
+              <div className="absolute bottom-3 left-3 right-3 rounded-xl bg-white/90 dark:bg-neutral-950/90 backdrop-blur border border-neutral-200 dark:border-neutral-800 px-4 py-3 flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Sparkles
+                    size={16}
+                    strokeWidth={1.75}
+                    className="text-neutral-900 dark:text-neutral-100"
+                  />
+                  <div className="leading-tight">
+                    <p className="text-xs text-neutral-500 dark:text-neutral-400">
+                      Currently working on
+                    </p>
+                    <p className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
+                      Web apps and networks
+                    </p>
+                  </div>
+                </div>
+                <span className="text-[10px] font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-600">
+                  &apos;26
+                </span>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+
+      {/* Bottom stats strip */}
+      <div className="absolute bottom-0 left-0 right-0 hidden md:block border-t border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/60 backdrop-blur">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-4 divide-x divide-neutral-200 dark:divide-neutral-800">
+          <Stat value="3+" label="Years of coding" />
+          <Stat value="15+" label="Projects built" />
+          <Stat value="10+" label="Tools I use" />
+          <Stat value="∞" label="Things to learn" />
         </div>
       </div>
     </section>
   );
 };
+
+const Stat = ({ value, label }) => (
+  <div className="py-5 px-4 flex flex-col items-start">
+    <span className="text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+      {value}
+    </span>
+    <span className="text-xs uppercase tracking-[0.15em] text-neutral-500 dark:text-neutral-400 mt-1">
+      {label}
+    </span>
+  </div>
+);
 
 export default Home;

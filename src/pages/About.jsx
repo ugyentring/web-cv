@@ -1,39 +1,56 @@
 import React from "react";
-import { Book, School, GraduationCap } from "lucide-react";
+import {
+  GraduationCap,
+  School,
+  BookOpen,
+  Sparkles,
+  Code2,
+  ShieldCheck,
+  Layers,
+} from "lucide-react";
 
 const education = [
   {
-    level: "Primary Education",
-    school: "Kezari Primary School",
-    year: "2009 - 2015",
+    level: "Tertiary Education",
+    school: "Gyalpozhing College of Information Technology",
+    year: "2022 — 2026",
     description:
-      "Built a strong foundation in basic subjects and essential skills.",
-    icon: (
-      <Book size={28} className="text-green-700 dark:text-green-400 mb-2" />
-    ),
+      "Specialized in Computer Science and Cybersecurity. Built projects across web development, blockchain, and penetration testing.",
+    Icon: GraduationCap,
   },
   {
     level: "Secondary Education",
     school: "Kamji Central School",
-    year: "2016 - 2019",
+    year: "2016 — 2019",
     description:
       "Focused on Science and Mathematics, developing analytical and problem-solving skills.",
-    icon: (
-      <School size={28} className="text-green-700 dark:text-green-400 mb-2" />
-    ),
+    Icon: School,
   },
   {
-    level: "Tertiary Education",
-    school: "Gyalpozhing College of Information Technology",
-    year: "2022 - 2026",
+    level: "Primary Education",
+    school: "Kezari Primary School",
+    year: "2009 — 2015",
     description:
-      "Specialized in Computer Science and Cybersecurity, completing projects in web development, blockchain, and penetration testing.",
-    icon: (
-      <GraduationCap
-        size={28}
-        className="text-green-700 dark:text-green-400 mb-2"
-      />
-    ),
+      "Built a strong foundation in essential subjects and learning habits.",
+    Icon: BookOpen,
+  },
+];
+
+const principles = [
+  {
+    Icon: Code2,
+    title: "Engineering",
+    desc: "Clean architecture, readable code, and pragmatic full-stack solutions.",
+  },
+  {
+    Icon: ShieldCheck,
+    title: "Security",
+    desc: "Threat-aware development with a focus on penetration testing.",
+  },
+  {
+    Icon: Layers,
+    title: "Craft",
+    desc: "Considered details, refined typography, and minimal interfaces.",
   },
 ];
 
@@ -41,61 +58,118 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative py-20 px-6 bg-gradient-to-br from-green-50 via-white to-green-100 
-                 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors overflow-hidden"
+      className="relative px-6 py-24 sm:py-28 bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 transition-colors"
     >
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_1px_1px,#4ade80_1px,transparent_0)] bg-[length:20px_20px]" />
-
-      {/* About Me */}
-      <div className="relative max-w-4xl mx-auto text-center mb-20 backdrop-blur-md bg-white/10 dark:bg-gray-800/20 p-10 rounded-2xl shadow-lg">
-        <h2 className="text-3xl font-semibold text-green-700 dark:text-green-400 mb-6">
-          About Me
-        </h2>
-        <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-          I am a Computer Science graduate of Gyalpozhing College of Information
-          Technology, experienced in building secure and efficient web
-          solutions. I have worked on frontend and backend development,
-          blockchain projects, and cybersecurity, with a focus on penetration
-          testing.
-        </p>
-        <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-          Throughout my studies, I completed several projects integrating modern
-          technologies and security best practices, gaining hands-on experience
-          in full-stack development and decentralized applications.
-        </p>
-      </div>
-
-      {/* Education */}
       <div className="relative max-w-6xl mx-auto">
-        <h3 className="text-2xl font-semibold text-green-700 dark:text-green-400 mb-10 text-center">
-          Education
-        </h3>
+        {/* Section header */}
+        <div className="flex items-center gap-4 mb-10">
+          <span className="h-px w-10 bg-neutral-300 dark:bg-neutral-700" />
+          <span className="text-xs uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-400 font-medium">
+            About
+          </span>
+        </div>
 
-        <div className="grid md:grid-cols-3 gap-10 relative z-10">
-          {education.map((edu, i) => (
-            <div
-              key={i}
-              className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-md transition-transform transform hover:-translate-y-2 hover:shadow-xl 
-                         hover:bg-green-50/60 dark:hover:bg-gray-700/40 text-center duration-300"
-            >
-              <div className="flex flex-col items-center">
-                {edu.icon}
-                <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-1">
-                  {edu.level}
-                </h4>
-                <p className="text-green-700 dark:text-green-400 font-medium mb-1">
-                  {edu.school}
-                </p>
-                <p className="text-gray-600 dark:text-gray-400 italic mb-2">
-                  {edu.year}
-                </p>
-                <p className="text-gray-600 dark:text-gray-400">
-                  {edu.description}
-                </p>
-              </div>
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 mb-20">
+          {/* Heading */}
+          <div className="lg:col-span-5">
+            <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.1] text-balance">
+              A developer who values
+              <span className="block text-neutral-400 dark:text-neutral-600 font-light">
+                clarity, security, and craft.
+              </span>
+            </h2>
+          </div>
+
+          {/* Body */}
+          <div className="lg:col-span-7 space-y-5 text-neutral-600 dark:text-neutral-400 text-base sm:text-lg leading-relaxed text-pretty">
+            <p>
+              I&apos;m a Computer Science graduate from Gyalpozhing College of
+              Information Technology, focused on building secure and efficient
+              web solutions. My work spans frontend and backend engineering,
+              blockchain applications, and offensive security.
+            </p>
+            <p>
+              Across academic and personal projects, I&apos;ve combined modern
+              technologies with security-first thinking — gaining hands-on
+              experience in full-stack development, decentralized applications,
+              and penetration testing.
+            </p>
+
+            {/* Principles */}
+            <div className="grid sm:grid-cols-3 gap-4 pt-4">
+              {principles.map(({ Icon, title, desc }) => (
+                <div
+                  key={title}
+                  className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 p-5 transition-colors hover:border-neutral-900 dark:hover:border-neutral-100"
+                >
+                  <Icon
+                    size={20}
+                    strokeWidth={1.75}
+                    className="text-neutral-900 dark:text-neutral-100 mb-3"
+                  />
+                  <h3 className="text-sm font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+                    {title}
+                  </h3>
+                  <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
+                    {desc}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+        </div>
+
+        {/* Education */}
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
+          <div className="lg:col-span-4">
+            <div className="flex items-center gap-2 text-neutral-500 dark:text-neutral-400 mb-3">
+              <Sparkles size={14} strokeWidth={1.75} />
+              <span className="text-xs uppercase tracking-[0.25em] font-medium">
+                Education
+              </span>
+            </div>
+            <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight leading-tight text-balance">
+              A foundation built over fifteen years.
+            </h3>
+            <p className="mt-3 text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
+              From early curiosity to a focused study of computer science and
+              cybersecurity.
+            </p>
+          </div>
+
+          <div className="lg:col-span-8">
+            <ol className="relative border-l border-neutral-200 dark:border-neutral-800">
+              {education.map(({ level, school, year, description, Icon }) => (
+                <li key={level} className="relative pl-8 pb-10 last:pb-0">
+                  {/* Timeline dot */}
+                  <span
+                    aria-hidden="true"
+                    className="absolute -left-[7px] top-1 flex h-3.5 w-3.5 items-center justify-center rounded-full bg-white dark:bg-neutral-950 border border-neutral-300 dark:border-neutral-700"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-neutral-900 dark:bg-neutral-100" />
+                  </span>
+
+                  <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-2">
+                    <span className="inline-flex items-center gap-2 text-neutral-900 dark:text-neutral-100">
+                      <Icon size={16} strokeWidth={1.75} />
+                      <span className="text-sm font-semibold tracking-tight">
+                        {level}
+                      </span>
+                    </span>
+                    <span className="text-xs font-mono uppercase tracking-widest text-neutral-400 dark:text-neutral-600">
+                      {year}
+                    </span>
+                  </div>
+                  <p className="text-base font-medium text-neutral-700 dark:text-neutral-300">
+                    {school}
+                  </p>
+                  <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
+                    {description}
+                  </p>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       </div>
     </section>

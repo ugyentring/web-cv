@@ -6,7 +6,7 @@ import {
   Sparkles,
   Code2,
   Network,
-  PenTool,
+  ShieldCheck,
 } from "lucide-react";
 
 const education = [
@@ -48,9 +48,9 @@ const principles = [
     desc: "Learning how computers and networks talk to each other, and how to set them up.",
   },
   {
-    Icon: PenTool,
-    title: "Design",
-    desc: "Caring about the small details — clear layouts, good typography, and a clean look.",
+    Icon: ShieldCheck,
+    title: "Cybersecurity",
+    desc: "Learning how to keep systems safe — firewalls, IDS/IPS, and the basics of network defense.",
   },
 ];
 

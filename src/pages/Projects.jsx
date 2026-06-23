@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowUpRight, Github, Trophy, ShieldCheck } from "lucide-react";
+import { Trophy, ShieldCheck } from "lucide-react";
 
 const projects = [
   {
@@ -126,24 +126,6 @@ const Projects = () => {
               </div>
             </article>
           ))}
-        </div>
-
-        {/* All projects link */}
-        <div className="mt-10 flex justify-center">
-          <a
-            href="https://github.com/ugyentring?tab=repositories"
-            target="_blank"
-            rel="noreferrer"
-            className="group inline-flex items-center gap-2 rounded-full border border-neutral-300 dark:border-neutral-700 px-5 py-2.5 text-sm font-medium text-neutral-900 dark:text-neutral-100 transition-all hover:border-neutral-900 dark:hover:border-neutral-100 hover:gap-3"
-          >
-            <Github size={16} strokeWidth={1.75} />
-            See more on GitHub
-            <ArrowUpRight
-              size={16}
-              strokeWidth={1.75}
-              className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-            />
-          </a>
         </div>
       </div>
     </section>

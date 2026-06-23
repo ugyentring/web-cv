@@ -1,16 +1,14 @@
 import React from "react";
 import myPic from "../assets/mypic.jpg";
-import resume from "../assets/My_Resume.pdf";
 import {
-  ArrowDownToLine,
   ArrowUpRight,
   Github,
   Linkedin,
   Mail,
   MapPin,
-  Sparkles,
-  Code2,
-  Network,
+  Trophy,
+  ShieldCheck,
+  Terminal,
 } from "lucide-react";
 
 const Home = () => {
@@ -56,7 +54,7 @@ const Home = () => {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-neutral-900 dark:bg-neutral-100 opacity-60"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-neutral-900 dark:bg-neutral-100"></span>
             </span>
-            Available for new opportunities
+            Open to penetration testing roles
           </div>
 
           {/* Heading */}
@@ -67,16 +65,17 @@ const Home = () => {
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.05] text-balance">
               Ugyen Tshering
               <span className="block text-neutral-400 dark:text-neutral-600 font-light">
-                Software Developer
+                Penetration Tester
               </span>
             </h1>
           </div>
 
           {/* Description */}
           <p className="max-w-xl text-base sm:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty">
-            I build modern web apps with clean code and a focus on good user
-            experience. I also work with computer networks and enjoy figuring
-            out how systems connect.
+            I find and exploit security weaknesses before attackers do. From
+            network reconnaissance and man-in-the-middle attacks to web
+            exploitation against the OWASP Top 10, I think like an adversary to
+            help teams build stronger defenses.
           </p>
 
           {/* Meta row */}
@@ -87,29 +86,28 @@ const Home = () => {
             </span>
             <span className="hidden sm:inline-block h-1 w-1 rounded-full bg-neutral-300 dark:bg-neutral-700" />
             <span className="inline-flex items-center gap-2">
-              <Code2 size={16} strokeWidth={1.75} />
-              Full-Stack Developer
+              <ShieldCheck size={16} strokeWidth={1.75} />
+              Offensive Security
             </span>
             <span className="hidden sm:inline-block h-1 w-1 rounded-full bg-neutral-300 dark:bg-neutral-700" />
             <span className="inline-flex items-center gap-2">
-              <Network size={16} strokeWidth={1.75} />
-              Networking
+              <Terminal size={16} strokeWidth={1.75} />
+              Network &amp; Web Pentesting
             </span>
           </div>
 
           {/* CTAs */}
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <a
-              href={resume}
-              download
+              href="#projects"
               className="group inline-flex items-center gap-2 rounded-full bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 px-6 py-3 text-sm font-medium transition-all hover:bg-neutral-800 dark:hover:bg-white hover:gap-3"
             >
-              <ArrowDownToLine
+              View my work
+              <ArrowUpRight
                 size={16}
                 strokeWidth={2}
-                className="transition-transform group-hover:translate-y-0.5"
+                className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
               />
-              Download Resume
             </a>
             <a
               href="#contact"
@@ -180,17 +178,17 @@ const Home = () => {
               {/* Bottom info card */}
               <div className="absolute bottom-3 left-3 right-3 rounded-xl bg-white/90 dark:bg-neutral-950/90 backdrop-blur border border-neutral-200 dark:border-neutral-800 px-4 py-3 flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <Sparkles
+                  <Trophy
                     size={16}
                     strokeWidth={1.75}
                     className="text-neutral-900 dark:text-neutral-100"
                   />
                   <div className="leading-tight">
                     <p className="text-xs text-neutral-500 dark:text-neutral-400">
-                      Currently working on
+                      Recent highlight
                     </p>
                     <p className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                      Web apps and networks
+                      CTF competition winner
                     </p>
                   </div>
                 </div>
@@ -206,10 +204,10 @@ const Home = () => {
       {/* Bottom stats strip */}
       <div className="absolute bottom-0 left-0 right-0 hidden md:block border-t border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/60 backdrop-blur">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-4 divide-x divide-neutral-200 dark:divide-neutral-800">
-          <Stat value="3+" label="Years of coding" />
-          <Stat value="15+" label="Projects built" />
-          <Stat value="10+" label="Tools I use" />
-          <Stat value="∞" label="Things to learn" />
+          <Stat value="1st" label="CTF competition" />
+          <Stat value="10+" label="Security tools" />
+          <Stat value="Top 10" label="OWASP focus" />
+          <Stat value="∞" label="Things to break" />
         </div>
       </div>
     </section>

@@ -4,9 +4,9 @@ import {
   School,
   BookOpen,
   Sparkles,
-  Code2,
-  Network,
   ShieldCheck,
+  Network,
+  Bug,
 } from "lucide-react";
 
 const education = [
@@ -15,7 +15,7 @@ const education = [
     school: "Gyalpozhing College of Information Technology",
     year: "2022 — 2026",
     description:
-      "Studied Computer Science. Worked on projects in web development, blockchain, and computer networking.",
+      "Studied Computer Science with a focus on cybersecurity — penetration testing, network security, and ethical hacking. Won an inter-college Capture The Flag competition.",
     Icon: GraduationCap,
   },
   {
@@ -38,19 +38,19 @@ const education = [
 
 const principles = [
   {
-    Icon: Code2,
-    title: "Web Development",
-    desc: "Building full-stack web apps that are simple to use and easy to maintain.",
+    Icon: ShieldCheck,
+    title: "Penetration Testing",
+    desc: "Simulating real attacks against networks and web apps to uncover vulnerabilities before attackers do.",
   },
   {
     Icon: Network,
-    title: "Networking",
-    desc: "Learning how computers and networks talk to each other, and how to set them up.",
+    title: "Network Attacks",
+    desc: "ARP/DNS spoofing, man-in-the-middle, and traffic analysis with Wireshark and Nmap recon.",
   },
   {
-    Icon: ShieldCheck,
-    title: "Cybersecurity",
-    desc: "Learning how to keep systems safe — firewalls, IDS/IPS, and the basics of network defense.",
+    Icon: Bug,
+    title: "Web Exploitation",
+    desc: "Hands-on with the OWASP Top 10 — SQL injection, XSS, and more, practiced on DVWA and other labs.",
   },
 ];
 
@@ -84,14 +84,17 @@ const About = () => {
           <div className="lg:col-span-7 space-y-5 text-neutral-600 dark:text-neutral-400 text-base sm:text-lg leading-relaxed text-pretty">
             <p>
               I&apos;m a Computer Science graduate from Gyalpozhing College of
-              Information Technology. I enjoy building web apps that are
-              fast, easy to use, and well organized behind the scenes.
+              Information Technology with a focus on offensive security. I enjoy
+              taking systems apart, understanding how they break, and showing
+              teams how to fix the gaps.
             </p>
             <p>
-              Through school and personal projects, I&apos;ve worked on
-              full-stack web development, blockchain apps, and computer
-              networking. I like learning how things work and putting that
-              knowledge into projects I can be proud of.
+              I work hands-on across the attack chain — network reconnaissance
+              with Nmap, traffic capture and analysis in Wireshark, ARP/DNS
+              spoofing and MITM attacks, web exploitation against the OWASP Top
+              10 on DVWA, and post-exploitation with Metasploit. I recently won
+              an inter-college Capture The Flag competition that also included
+              industry professionals.
             </p>
 
             {/* Principles */}

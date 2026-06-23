@@ -1,29 +1,33 @@
 import React from "react";
-import { ArrowUpRight, Github, FolderGit2 } from "lucide-react";
+import { Trophy, ShieldCheck } from "lucide-react";
 
 const projects = [
   {
-    title: "Land Registry System",
-    tagline: "Blockchain · Land records",
-    desc: "A blockchain-based system for storing land ownership records. The goal is to make records harder to fake and easier to verify.",
-    tech: ["Go", "Hyperledger", "React", "Node.js", "IPFS"],
-    link: "https://github.com/ugyentring/tera-dapp",
+    title: "Inter-College CTF Champion",
+    tagline: "Capture The Flag · Competition",
+    desc: "Won a Capture The Flag competition featuring participants from three colleges as well as working industry professionals. Solved challenges across web exploitation, networking, and cryptography under time pressure.",
+    tech: ["Web Exploitation", "Networking", "Cryptography", "Forensics"],
     year: "2025",
   },
   {
-    title: "Blockchain Voting System",
-    tagline: "Smart contracts · Online voting",
-    desc: "An online voting app where every vote is saved on a blockchain. Once a vote is cast, it can't be changed, and the results are easy to verify.",
-    tech: ["Solidity", "Hardhat", "React", "Express", "Web3.js"],
-    link: "https://github.com/ugyentring/votingdapp",
+    title: "Web App Exploitation Lab",
+    tagline: "OWASP Top 10 · DVWA",
+    desc: "Practiced full web exploitation against intentionally vulnerable apps like DVWA — SQL injection, XSS, command injection, and broken authentication — then documented the impact and remediation for each finding.",
+    tech: ["SQL Injection", "XSS", "OWASP Top 10", "DVWA", "Burp Suite"],
+    year: "2025",
+  },
+  {
+    title: "Network Attack Simulation",
+    tagline: "MITM · Traffic Analysis",
+    desc: "Built a lab to perform ARP and DNS spoofing, intercept traffic via man-in-the-middle attacks, and analyze captured packets in Wireshark to demonstrate how unencrypted traffic can be compromised.",
+    tech: ["ARP Spoofing", "DNS Spoofing", "MITM", "Wireshark", "Nmap"],
     year: "2024",
   },
   {
-    title: "Social Media DApp",
-    tagline: "Web3 · Wallet login",
-    desc: "A small social media app where users sign in with their Metamask wallet, then post and like content. A simple way to explore Web3 apps.",
-    tech: ["Next.js", "TailwindCSS", "Solidity", "Metamask", "MongoDB"],
-    link: "https://github.com/ugyentring/prj-app",
+    title: "Recon & Exploitation Workflow",
+    tagline: "Nmap · Metasploit",
+    desc: "End-to-end offensive workflow: host discovery and service enumeration with Nmap, vulnerability identification, then controlled exploitation and post-exploitation using Metasploit against lab targets.",
+    tech: ["Nmap", "Metasploit", "Kali Linux", "Enumeration", "Post-Exploitation"],
     year: "2024",
   },
 ];
@@ -46,17 +50,18 @@ const Projects = () => {
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 mb-14">
           <div className="lg:col-span-7">
             <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.1] text-balance">
-              Projects
+              Engagements &amp; Labs
               <span className="block text-neutral-400 dark:text-neutral-600 font-light">
-                A few things I&apos;ve built.
+                A few things I&apos;ve broken into.
               </span>
             </h2>
           </div>
           <div className="lg:col-span-5 lg:pt-3">
             <p className="text-base sm:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty">
-              Here are some of the projects I&apos;ve been working on lately.
-              They cover blockchain, web apps, and a bit of everything in
-              between.
+              A selection of competitions and hands-on security labs covering
+              web exploitation, network attacks, reconnaissance, and
+              exploitation — all performed in controlled, authorized
+              environments.
             </p>
           </div>
         </div>
@@ -64,11 +69,8 @@ const Projects = () => {
         {/* Projects list */}
         <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden bg-white dark:bg-neutral-950">
           {projects.map((p, idx) => (
-            <a
+            <article
               key={p.title}
-              href={p.link}
-              target="_blank"
-              rel="noreferrer"
               className="group relative block px-6 sm:px-8 py-8 sm:py-10 transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 last:border-b-0"
             >
               <div className="grid grid-cols-12 gap-4 sm:gap-8 items-start">
@@ -83,13 +85,21 @@ const Projects = () => {
                 </div>
 
                 {/* Title + description */}
-                <div className="col-span-12 sm:col-span-7">
+                <div className="col-span-12 sm:col-span-10">
                   <div className="flex items-start gap-3 mb-2">
-                    <FolderGit2
-                      size={18}
-                      strokeWidth={1.75}
-                      className="mt-1 text-neutral-400 dark:text-neutral-600 transition-colors group-hover:text-neutral-900 dark:group-hover:text-neutral-100"
-                    />
+                    {idx === 0 ? (
+                      <Trophy
+                        size={18}
+                        strokeWidth={1.75}
+                        className="mt-1 text-neutral-400 dark:text-neutral-600 transition-colors group-hover:text-neutral-900 dark:group-hover:text-neutral-100"
+                      />
+                    ) : (
+                      <ShieldCheck
+                        size={18}
+                        strokeWidth={1.75}
+                        className="mt-1 text-neutral-400 dark:text-neutral-600 transition-colors group-hover:text-neutral-900 dark:group-hover:text-neutral-100"
+                      />
+                    )}
                     <div>
                       <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight leading-tight text-neutral-900 dark:text-neutral-100 transition-colors">
                         {p.title}
@@ -113,39 +123,9 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-
-                {/* Arrow */}
-                <div className="col-span-12 sm:col-span-3 flex sm:justify-end">
-                  <span className="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 dark:text-neutral-400 transition-all duration-300 group-hover:text-neutral-900 dark:group-hover:text-neutral-100 group-hover:gap-3">
-                    View on GitHub
-                    <ArrowUpRight
-                      size={18}
-                      strokeWidth={1.75}
-                      className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-                    />
-                  </span>
-                </div>
               </div>
-            </a>
+            </article>
           ))}
-        </div>
-
-        {/* All projects link */}
-        <div className="mt-10 flex justify-center">
-          <a
-            href="https://github.com/ugyentring?tab=repositories"
-            target="_blank"
-            rel="noreferrer"
-            className="group inline-flex items-center gap-2 rounded-full border border-neutral-300 dark:border-neutral-700 px-5 py-2.5 text-sm font-medium text-neutral-900 dark:text-neutral-100 transition-all hover:border-neutral-900 dark:hover:border-neutral-100 hover:gap-3"
-          >
-            <Github size={16} strokeWidth={1.75} />
-            See all my work on GitHub
-            <ArrowUpRight
-              size={16}
-              strokeWidth={1.75}
-              className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-            />
-          </a>
         </div>
       </div>
     </section>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, Moon, Sun, ArrowDownToLine } from "lucide-react";
-import resume from "../assets/My_Resume.pdf";
+import { Menu, X, Moon, Sun } from "lucide-react";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -140,18 +139,12 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             )}
           </button>
 
-          {/* Resume CTA — matches Home primary CTA */}
+          {/* Contact CTA */}
           <a
-            href={resume}
-            download
+            href="#contact"
             className="hidden sm:inline-flex group items-center gap-2 rounded-full bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 pl-4 pr-4 h-9 text-sm font-medium transition-all hover:bg-neutral-800 dark:hover:bg-white"
           >
-            <ArrowDownToLine
-              size={15}
-              strokeWidth={2}
-              className="transition-transform group-hover:translate-y-0.5"
-            />
-            Resume
+            Get in touch
           </a>
 
           {/* Mobile menu button */}
@@ -220,13 +213,11 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
           <div className="mt-4 pt-4 border-t border-neutral-100 dark:border-neutral-900 flex items-center gap-2">
             <a
-              href={resume}
-              download
+              href="#contact"
               onClick={() => setMenuOpen(false)}
               className="flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 px-4 h-10 text-sm font-medium transition-colors hover:bg-neutral-800 dark:hover:bg-white"
             >
-              <ArrowDownToLine size={15} strokeWidth={2} />
-              Download Resume
+              Get in touch
             </a>
           </div>
         </div>

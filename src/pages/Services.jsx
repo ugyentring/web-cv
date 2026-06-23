@@ -1,27 +1,27 @@
 import React from "react";
-import { Code2, Server, Network, ArrowUpRight } from "lucide-react";
+import { Bug, Network, ShieldCheck, ArrowUpRight } from "lucide-react";
 
 const services = [
   {
-    title: "Frontend Development",
-    Icon: Code2,
+    title: "Web Application Pentesting",
+    Icon: Bug,
     description:
-      "Building websites that look good, work on every screen, and feel smooth to use.",
-    tech: ["React", "Next.js", "TailwindCSS", "TypeScript", "JavaScript"],
+      "Testing web apps against the OWASP Top 10 — SQL injection, XSS, broken auth, and more — then reporting findings with clear remediation steps.",
+    tech: ["OWASP Top 10", "SQL Injection", "DVWA", "Burp Suite", "XSS"],
   },
   {
-    title: "Backend Development",
-    Icon: Server,
-    description:
-      "Setting up APIs, databases, and the server side of things so the whole app runs reliably.",
-    tech: ["Node.js", "Express", "MongoDB", "MySQL", "Python"],
-  },
-  {
-    title: "Networking",
+    title: "Network Penetration Testing",
     Icon: Network,
     description:
-      "Setting up and configuring small networks — IP addressing, routing, switching, and basic troubleshooting.",
-    tech: ["Cisco IOS", "TCP/IP", "Routing", "Switching", "Subnetting"],
+      "Mapping and attacking networks: host discovery and scanning, ARP/DNS spoofing, MITM interception, and traffic analysis to expose weak points.",
+    tech: ["Nmap", "Wireshark", "ARP Spoofing", "DNS Spoofing", "MITM"],
+  },
+  {
+    title: "Exploitation & Reporting",
+    Icon: ShieldCheck,
+    description:
+      "Validating vulnerabilities through controlled exploitation and post-exploitation, then documenting impact and fixes in a clear, actionable report.",
+    tech: ["Metasploit", "Kali Linux", "Recon", "Reporting", "Remediation"],
   },
 ];
 
@@ -51,9 +51,10 @@ const Services = () => {
           </div>
           <div className="lg:col-span-6 lg:pt-3">
             <p className="max-w-xl text-base sm:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty">
-              These are the main things I work on right now. From the user
-              interface to the server, all the way down to the network — I
-              like understanding how the whole thing fits together.
+              I help teams find security weaknesses before attackers do —
+              across web applications and networks. From reconnaissance to
+              exploitation to a clear report, I cover the full offensive
+              security workflow.
             </p>
           </div>
         </div>

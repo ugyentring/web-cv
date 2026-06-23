@@ -66,8 +66,9 @@ const Contact = () => {
                 </span>
               </h2>
               <p className="mt-5 text-base sm:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty max-w-md">
-                Open to freelance work, internships, and team projects.
-                Send me a message and I&apos;ll get back to you soon.
+                Open to penetration testing and offensive security roles,
+                including opportunities in Singapore. Send me a message and
+                I&apos;ll get back to you soon.
               </p>
             </div>
 

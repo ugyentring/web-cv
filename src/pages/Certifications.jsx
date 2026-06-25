@@ -63,7 +63,7 @@ const Certifications = () => {
           </div>
           <div className="lg:col-span-6 lg:pt-3">
             <p className="max-w-xl text-base sm:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty">
-              Courses I&apos;ve completed in cybersecurity, networking, and UX
+              Courses I&apos;ve completed in networking, IT foundations, and UX
               design. You can open each certificate or check it online.
             </p>
           </div>

@@ -65,7 +65,7 @@ const Home = () => {
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.05] text-balance">
               Ugyen Tshering
               <span className="block text-neutral-400 dark:text-neutral-600 font-light">
-                Software Developer &amp; IT Officer
+                Software Developer
               </span>
             </h1>
           </div>

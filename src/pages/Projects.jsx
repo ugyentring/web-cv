@@ -1,33 +1,33 @@
 import React from "react";
-import { Trophy, ShieldCheck } from "lucide-react";
+import { Trophy, Code2 } from "lucide-react";
 
 const projects = [
   {
-    title: "Inter-College CTF Champion",
-    tagline: "Capture The Flag · Competition",
-    desc: "Won a Capture The Flag competition featuring participants from three colleges as well as working industry professionals. Solved challenges across web exploitation, networking, and cryptography under time pressure.",
-    tech: ["Web Exploitation", "Networking", "Cryptography", "Forensics"],
+    title: "Personal Portfolio Website",
+    tagline: "React · Tailwind CSS",
+    desc: "Designed and built this responsive portfolio from scratch with React and Tailwind CSS — including dark mode, smooth section navigation, and an accessible, mobile-first layout.",
+    tech: ["React", "Tailwind CSS", "Vite", "Responsive Design", "Dark Mode"],
     year: "2025",
   },
   {
-    title: "Web App Exploitation Lab",
-    tagline: "OWASP Top 10 · DVWA",
-    desc: "Practiced full web exploitation against intentionally vulnerable apps like DVWA — SQL injection, XSS, command injection, and broken authentication — then documented the impact and remediation for each finding.",
-    tech: ["SQL Injection", "XSS", "OWASP Top 10", "DVWA", "Burp Suite"],
+    title: "Full-Stack Web Application",
+    tagline: "MERN · CRUD",
+    desc: "Built an end-to-end web app with a React front-end and a Node.js/Express API, backed by a database. Implemented authentication, CRUD operations, and a clean REST API.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "REST API"],
     year: "2025",
   },
   {
-    title: "Network Attack Simulation",
-    tagline: "MITM · Traffic Analysis",
-    desc: "Built a lab to perform ARP and DNS spoofing, intercept traffic via man-in-the-middle attacks, and analyze captured packets in Wireshark to demonstrate how unencrypted traffic can be compromised.",
-    tech: ["ARP Spoofing", "DNS Spoofing", "MITM", "Wireshark", "Nmap"],
+    title: "Database-Driven Management System",
+    tagline: "SQL · Backend",
+    desc: "Developed a management system with a relational database — designing the schema, writing optimized SQL queries, and building server-side logic to handle records reliably.",
+    tech: ["SQL", "Database Design", "Node.js", "CRUD", "Backend"],
     year: "2024",
   },
   {
-    title: "Recon & Exploitation Workflow",
-    tagline: "Nmap · Metasploit",
-    desc: "End-to-end offensive workflow: host discovery and service enumeration with Nmap, vulnerability identification, then controlled exploitation and post-exploitation using Metasploit against lab targets.",
-    tech: ["Nmap", "Metasploit", "Kali Linux", "Enumeration", "Post-Exploitation"],
+    title: "Network & Server Setup",
+    tagline: "IT Operations",
+    desc: "Configured a small office network and set up Linux servers — handling IP addressing, basic routing and switching, user access, and ongoing troubleshooting and support.",
+    tech: ["Networking", "Linux", "Server Setup", "Troubleshooting", "Support"],
     year: "2024",
   },
 ];
@@ -50,18 +50,17 @@ const Projects = () => {
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 mb-14">
           <div className="lg:col-span-7">
             <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.1] text-balance">
-              Engagements &amp; Labs
+              Projects &amp; Work
               <span className="block text-neutral-400 dark:text-neutral-600 font-light">
-                A few things I&apos;ve broken into.
+                A few things I&apos;ve built.
               </span>
             </h2>
           </div>
           <div className="lg:col-span-5 lg:pt-3">
             <p className="text-base sm:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty">
-              A selection of competitions and hands-on security labs covering
-              web exploitation, network attacks, reconnaissance, and
-              exploitation — all performed in controlled, authorized
-              environments.
+              A selection of development projects and IT work — full-stack web
+              apps, database-driven systems, and hands-on network and server
+              setup that I&apos;ve designed, built, and maintained.
             </p>
           </div>
         </div>
@@ -94,7 +93,7 @@ const Projects = () => {
                         className="mt-1 text-neutral-400 dark:text-neutral-600 transition-colors group-hover:text-neutral-900 dark:group-hover:text-neutral-100"
                       />
                     ) : (
-                      <ShieldCheck
+                      <Code2
                         size={18}
                         strokeWidth={1.75}
                         className="mt-1 text-neutral-400 dark:text-neutral-600 transition-colors group-hover:text-neutral-900 dark:group-hover:text-neutral-100"

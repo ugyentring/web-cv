@@ -4,9 +4,9 @@ import {
   School,
   BookOpen,
   Sparkles,
-  ShieldCheck,
-  Network,
-  Bug,
+  Code2,
+  Server,
+  Database,
 } from "lucide-react";
 
 const education = [
@@ -15,7 +15,7 @@ const education = [
     school: "Gyalpozhing College of Information Technology",
     year: "2022 — 2026",
     description:
-      "Studied Computer Science with a focus on cybersecurity — penetration testing, network security, and ethical hacking. Won an inter-college Capture The Flag competition.",
+      "Studied Computer Science with a focus on software engineering — web development, databases, networking, and systems administration. Built several full-stack projects along the way.",
     Icon: GraduationCap,
   },
   {
@@ -38,19 +38,19 @@ const education = [
 
 const principles = [
   {
-    Icon: ShieldCheck,
-    title: "Penetration Testing",
-    desc: "Simulating real attacks against networks and web apps to uncover vulnerabilities before attackers do.",
+    Icon: Code2,
+    title: "Web Development",
+    desc: "Building responsive front-ends and APIs with React, JavaScript, Node.js, and modern tooling.",
   },
   {
-    Icon: Network,
-    title: "Network Attacks",
-    desc: "ARP/DNS spoofing, man-in-the-middle, and traffic analysis with Wireshark and Nmap recon.",
+    Icon: Database,
+    title: "Databases & Backend",
+    desc: "Designing schemas and writing queries with SQL and MongoDB to power reliable applications.",
   },
   {
-    Icon: Bug,
-    title: "Web Exploitation",
-    desc: "Hands-on with the OWASP Top 10 — SQL injection, XSS, and more, practiced on DVWA and other labs.",
+    Icon: Server,
+    title: "IT & Systems",
+    desc: "Networking, server setup, troubleshooting, and day-to-day technical support to keep things running.",
   },
 ];
 
@@ -84,17 +84,17 @@ const About = () => {
           <div className="lg:col-span-7 space-y-5 text-neutral-600 dark:text-neutral-400 text-base sm:text-lg leading-relaxed text-pretty">
             <p>
               I&apos;m a Computer Science graduate from Gyalpozhing College of
-              Information Technology with a focus on offensive security. I enjoy
-              taking systems apart, understanding how they break, and showing
-              teams how to fix the gaps.
+              Information Technology with a focus on software development and IT.
+              I enjoy building applications from the ground up and making sure
+              the systems behind them stay healthy and reliable.
             </p>
             <p>
-              I work hands-on across the attack chain — network reconnaissance
-              with Nmap, traffic capture and analysis in Wireshark, ARP/DNS
-              spoofing and MITM attacks, web exploitation against the OWASP Top
-              10 on DVWA, and post-exploitation with Metasploit. I recently won
-              an inter-college Capture The Flag competition that also included
-              industry professionals.
+              I work across the stack — building user interfaces with React and
+              JavaScript, writing back-end APIs with Node.js, and modeling data
+              in SQL and MongoDB. Alongside development, I&apos;m comfortable
+              with the IT officer side of things: configuring networks, setting
+              up and maintaining servers, and providing hands-on technical
+              support.
             </p>
 
             {/* Principles */}

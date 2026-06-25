@@ -7,8 +7,8 @@ import {
   Mail,
   MapPin,
   Trophy,
-  ShieldCheck,
-  Terminal,
+  Code2,
+  Server,
 } from "lucide-react";
 
 const Home = () => {
@@ -54,7 +54,7 @@ const Home = () => {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-neutral-900 dark:bg-neutral-100 opacity-60"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-neutral-900 dark:bg-neutral-100"></span>
             </span>
-            Open to penetration testing roles
+            Open to software developer &amp; IT officer roles
           </div>
 
           {/* Heading */}
@@ -65,17 +65,17 @@ const Home = () => {
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.05] text-balance">
               Ugyen Tshering
               <span className="block text-neutral-400 dark:text-neutral-600 font-light">
-                Penetration Tester
+                Software Developer &amp; IT Officer
               </span>
             </h1>
           </div>
 
           {/* Description */}
           <p className="max-w-xl text-base sm:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty">
-            I find and exploit security weaknesses before attackers do. From
-            network reconnaissance and man-in-the-middle attacks to web
-            exploitation against the OWASP Top 10, I think like an adversary to
-            help teams build stronger defenses.
+            I build reliable web applications and keep systems running smoothly.
+            From full-stack development with React and Node.js to managing
+            networks, servers, and IT support, I enjoy turning requirements into
+            clean, maintainable solutions that teams can depend on.
           </p>
 
           {/* Meta row */}
@@ -86,13 +86,13 @@ const Home = () => {
             </span>
             <span className="hidden sm:inline-block h-1 w-1 rounded-full bg-neutral-300 dark:bg-neutral-700" />
             <span className="inline-flex items-center gap-2">
-              <ShieldCheck size={16} strokeWidth={1.75} />
-              Offensive Security
+              <Code2 size={16} strokeWidth={1.75} />
+              Full-Stack Development
             </span>
             <span className="hidden sm:inline-block h-1 w-1 rounded-full bg-neutral-300 dark:bg-neutral-700" />
             <span className="inline-flex items-center gap-2">
-              <Terminal size={16} strokeWidth={1.75} />
-              Network &amp; Web Pentesting
+              <Server size={16} strokeWidth={1.75} />
+              IT Systems &amp; Support
             </span>
           </div>
 
@@ -188,7 +188,7 @@ const Home = () => {
                       Recent highlight
                     </p>
                     <p className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                      CTF competition winner
+                      CS graduate &amp; builder
                     </p>
                   </div>
                 </div>
@@ -204,10 +204,10 @@ const Home = () => {
       {/* Bottom stats strip */}
       <div className="absolute bottom-0 left-0 right-0 hidden md:block border-t border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/60 backdrop-blur">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-4 divide-x divide-neutral-200 dark:divide-neutral-800">
-          <Stat value="1st" label="CTF competition" />
-          <Stat value="10+" label="Security tools" />
-          <Stat value="Top 10" label="OWASP focus" />
-          <Stat value="∞" label="Things to break" />
+          <Stat value="10+" label="Projects built" />
+          <Stat value="5+" label="Tech &amp; tools" />
+          <Stat value="Full" label="Stack workflow" />
+          <Stat value="∞" label="Things to build" />
         </div>
       </div>
     </section>

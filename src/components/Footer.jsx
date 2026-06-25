@@ -58,13 +58,14 @@ const Footer = () => {
                   Ugyen Tshering
                 </span>
                 <span className="text-[10px] uppercase tracking-[0.25em] text-neutral-500 dark:text-neutral-400 font-medium">
-                  Penetration Tester
+                  Software Developer &amp; IT Officer
                 </span>
               </span>
             </a>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty">
-              Offensive security and penetration testing from Thimphu, Bhutan.
-              Open to pentesting roles, including opportunities in Singapore.
+              Software development and IT systems from Thimphu, Bhutan. Open to
+              developer and IT officer roles, including opportunities in
+              Singapore.
             </p>
 
             {/* CTA */}

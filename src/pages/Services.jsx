@@ -1,27 +1,27 @@
 import React from "react";
-import { Bug, Network, ShieldCheck, ArrowUpRight } from "lucide-react";
+import { Code2, Server, Database, ArrowUpRight } from "lucide-react";
 
 const services = [
   {
-    title: "Web Application Pentesting",
-    Icon: Bug,
+    title: "Web Application Development",
+    Icon: Code2,
     description:
-      "Testing web apps against the OWASP Top 10 — SQL injection, XSS, broken auth, and more — then reporting findings with clear remediation steps.",
-    tech: ["OWASP Top 10", "SQL Injection", "DVWA", "Burp Suite", "XSS"],
+      "Building responsive, accessible web apps from front-end to back-end — clean UIs with React and reliable APIs with Node.js, delivered with maintainable code.",
+    tech: ["React", "JavaScript", "Node.js", "Tailwind CSS", "REST APIs"],
   },
   {
-    title: "Network Penetration Testing",
-    Icon: Network,
+    title: "Backend & Databases",
+    Icon: Database,
     description:
-      "Mapping and attacking networks: host discovery and scanning, ARP/DNS spoofing, MITM interception, and traffic analysis to expose weak points.",
-    tech: ["Nmap", "Wireshark", "ARP Spoofing", "DNS Spoofing", "MITM"],
+      "Designing data models, writing efficient queries, and building server-side logic that keeps applications fast, consistent, and easy to scale.",
+    tech: ["SQL", "MongoDB", "Express", "Authentication", "API Design"],
   },
   {
-    title: "Exploitation & Reporting",
-    Icon: ShieldCheck,
+    title: "IT Support & Systems",
+    Icon: Server,
     description:
-      "Validating vulnerabilities through controlled exploitation and post-exploitation, then documenting impact and fixes in a clear, actionable report.",
-    tech: ["Metasploit", "Kali Linux", "Recon", "Reporting", "Remediation"],
+      "Setting up and maintaining networks and servers, troubleshooting issues, and providing day-to-day technical support to keep teams productive.",
+    tech: ["Networking", "Linux", "Server Setup", "Troubleshooting", "Support"],
   },
 ];
 
@@ -51,10 +51,10 @@ const Services = () => {
           </div>
           <div className="lg:col-span-6 lg:pt-3">
             <p className="max-w-xl text-base sm:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 text-pretty">
-              I help teams find security weaknesses before attackers do —
-              across web applications and networks. From reconnaissance to
-              exploitation to a clear report, I cover the full offensive
-              security workflow.
+              I help teams ship software and keep their systems running — from
+              building full-stack web applications to managing the networks,
+              servers, and support behind them. I cover the work end to end,
+              from first line of code to day-to-day operations.
             </p>
           </div>
         </div>
